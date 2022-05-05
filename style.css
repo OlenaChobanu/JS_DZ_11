@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #4d94ff;
+    color: #4d4d4d;
+    font-size: 40px;
+    line-height:60px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+    padding: 100px 15px 15px 15px;
+}
+
+.input-and-button {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.input {
+    padding: 10px 15px;
+    color: inherit;
+    background-color: #e6e6e6;
+    font-size: 26px;
+    line-height: 30px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.error-cont {
+    height: 60px;
+    color: red;
+    font-size: 14px;
+}
+.btn {
+    height: 61px;
+    padding: 10px 25px;
+    color: inherit;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: inherit;
+    background-color: #4dff4d;
+    border: 2px solid #029102;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #80ff80;
+    border: 2px solid #00b300;
+}
+.btn:disabled {
+    background-color: rgb(200, 200, 200);
+
+}
+
+.to-do-list {
+    padding: 40px;
+    height: 600px;
+    overflow-y: auto;
+    background-color: #e6e6e6;
+    border: 2px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.list {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 400;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px;
+    padding-left: 20px;
+    background-color: rgb(246, 246, 10);
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+li + li {
+    margin-top: 5px;
+}
+
+.delete {
+    cursor: pointer;
+    margin-left: 50px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(200, 200, 200);
+    font-size: 14px;
+    font-style: normal;
+    vertical-align: top;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.list-item-done {
+    background-color: lightgreen;
+}
